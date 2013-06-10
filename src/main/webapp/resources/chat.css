@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.buttonSendCont{
+	float: left;
+}
+
+.freqShowCont{
+	float: right;
+}
+
+.fieldsCont{
+	padding-top: 10px;
+}
+
+.messageCont{
+	width: 100%;
+}
+
+
+

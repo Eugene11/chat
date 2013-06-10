@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/jsp/layout/layout.jsp">
+		<put-attribute name="title" value="Spring 3 MVC &amp; Apache Tiles 2" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Home >Home page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	
+	<definition name="register" extends="baseLayout">
+		<put-attribute name="title" value="Register >Register page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+	</definition>
+	
+	<definition name="auth" extends="baseLayout">
+		<put-attribute name="title" value="Auth >Auth page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/auth.jsp" />
+	</definition>
+	
+	<definition name="cont" extends="baseLayout">
+		<put-attribute name="title" value="Main cont >Main cont page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/cont.jsp" />
+	</definition>
+	
+	<definition name="loggedon" extends="baseLayout">
+		<put-attribute name="title" value="Logged on >Logged on page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/loggedon.jsp" />
+	</definition>
+	
+	<definition name="profile" extends="baseLayout">
+		<put-attribute name="title" value="Profile >Profile page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/profile.jsp" />
+	</definition>
+	
+	<definition name="msg">
+		<put-attribute name="title" value="Messsages >Message page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/msg.jsp" />
+	</definition>
+	
+	<definition name="msg" template="/WEB-INF/jsp/msg.jsp">
+	    <put-attribute name="message" value="hello"/>
+	</definition>
+</tiles-definitions>
